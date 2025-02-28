@@ -4,6 +4,7 @@ import SearchBar from './components/SearchBar.jsx'
 
 function App() {
 
+  const employees = [{ employeeName: "James King", jobTitle: "President and CEO"}];
 
   return (
     <>

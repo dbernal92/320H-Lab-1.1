@@ -1,6 +1,6 @@
+import EmployeeListItem from "./EmployeeListItem.jsx"
 
-
-function EmployeeList() {
+function EmployeeList( {employees} ) {
     return (
         
     )
