@@ -1,0 +1,13 @@
+.searchBar {
+    padding: 10px 0;
+    text-align: center;
+}
+
+.searchBar input {
+    width: 95%;
+    max-width: 300px;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    outline: none;
+}

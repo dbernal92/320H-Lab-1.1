@@ -1,20 +1,22 @@
+import styles from "./EmployeeListItem.module.css";
 
-
-function EmployeeListItem(props) {
+function EmployeeListItem({ img, name, title }) {
     return (
-        <>
-            <img src="https://via.placeholder.com/150" alt="profile picture">
-                {props.img}
-            </img>
-            <h2>
-                {props.name}
-            </h2>
-            <p>
-                {props.title}
-            </p>
-        </>
-    )
+        <div className={styles.employeeListItem}>
+            <img src={img || EmployeeListItem.defaultProps.img} alt={name} />
+            <div>
+                <h2 className={styles.name}>{name}</h2>
+                <p className={styles.title}>{title}</p>
+            </div>
+        </div>
+    );
 }
 
 
-export default EmployeeListItem
+EmployeeListItem.defaultProps = {
+    img: "https://placehold.co/150",
+    name: "Unknown Employee",
+    title: "Unknown Title"
+};
+
+export default EmployeeListItem;

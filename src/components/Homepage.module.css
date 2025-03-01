@@ -1,0 +1,20 @@
+.homepage {
+    width: 90%;
+    max-width: 400px; /* Matches EmployeeList */
+    background-color: white;
+    padding: 20px;
+    margin: 20px auto;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.header {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.directory {
+    width: 100%;
+    display: block;
+}
